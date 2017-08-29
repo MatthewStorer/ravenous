@@ -3,18 +3,17 @@ import './BusinessList.css';
 import Business from '../Business/Business';
 
 class BusinessList extends React.Component {
-  render () {
+  render() {
     return (
-    <div className="BusinessList">
-    {
-this.props.businesses.map(business => {
-      return <Business myProp={business} />
-
- })
- }
-    </div>
-  );
-}
+      <div className="BusinessList">
+        {
+          this.props.businesses.map(business => {
+            return <Business business={business} />
+          })
+        }
+      </div>
+    );
+  }
 }
 
 export default BusinessList;
