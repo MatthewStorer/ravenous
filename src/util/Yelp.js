@@ -29,7 +29,7 @@ search(term, location, sortBy) {
         {
           Authorisation: `Bearer ${accessToken}`}
         }
-    );
+    )
   }).then(response => {
     return response.json();
   }).then(jsonResponse => {
